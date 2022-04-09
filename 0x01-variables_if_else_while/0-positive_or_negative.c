@@ -3,11 +3,14 @@
 #include <stdlib.h>
 
 /**
- * main - determine if a randon number is positive, negative or zero
+ * main - assigns a random number to int n everytime
+ * it executes, and print it
  * Return: Always 0 (Success)
  */
 int main(void)
 {
+	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
