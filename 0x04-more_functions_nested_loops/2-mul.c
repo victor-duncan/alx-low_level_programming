@@ -3,19 +3,17 @@
 /**
  * mul - function that multiplies two integers.
  *
- * @a: number 1.
- * @b: number 2.
+ * @a: int to be multiplied to b
+ * @b: int to be multiplied to a
  *
- * Return: multiplies two integers.
+ * Return: the result of the operation
  */
 
 int mul(int a, int b)
 {
-	int a = 1;
-	int b = 2;
+	int c;
 
-	printf("%d\n", a * b);
-		mul = a * b
+	c = a * b;
 
-	return (a * b);
-}
+	return (c)
+
