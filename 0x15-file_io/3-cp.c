@@ -1,6 +1,6 @@
 /*
  * File: 3-cp.c
- * Auth: Brennan D Baraban
+ * Auth: Ahortu Duncan
  */
 
 #include "main.h"
