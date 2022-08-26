@@ -1,25 +1,24 @@
 #include "function_pointers.h"
-
 /**
- *int_index - function to search foran integer
- *@array: pointer
- *@size: integer
- *@cmp: pointer to function
- *
- *Return: 0
+ * int_index - returns index of a matching int
+ * @array: parameter
+ * @size: size of array
+ * @cmp: pointer to a function
+ * Return: index of matching int
  */
-
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
-	if (size <= 0 || array == NULL || cmp == NULL)
-		return (-1);
-
-	for (i = 0; i < size; i++)
+	if (array && size && cmp)
 	{
-		if (cmp(array[i]))
-			return (i);
+		if (size <= 0)
+			return (-1);
+		for (i = 0; i < size; i++)
+		{
+			if (cmp(array[i]) != 0)
+				return (i);
+		}
 	}
 	return (-1);
 }
